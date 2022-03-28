@@ -1,6 +1,8 @@
 import "./sidebar.scss";
 import DashboardIcon from "@mui/icons-material/Dashboard";
+import InsightsOutlinedIcon from '@mui/icons-material/InsightsOutlined';
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
+import EqualizerIcon from '@mui/icons-material/Equalizer';
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import CreditCardIcon from "@mui/icons-material/CreditCard";
 import StoreIcon from "@mui/icons-material/Store";
@@ -21,7 +23,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="top">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <span className="logo">lamadmin</span>
+          <span className="logo">Smart Contracts Analytics Platform</span>
         </Link>
       </div>
       <hr />
@@ -32,22 +34,22 @@ const Sidebar = () => {
             <DashboardIcon className="icon" />
             <span>Dashboard</span>
           </li>
-          <p className="title">LISTS</p>
+          <p className="title">Smart Contracts</p>
           <Link to="/users" style={{ textDecoration: "none" }}>
             <li>
-              <PersonOutlineIcon className="icon" />
-              <span>Users</span>
+              <InsightsOutlinedIcon className="icon" />
+              <span>Correlalation Analysis</span>
             </li>
           </Link>
           <Link to="/products" style={{ textDecoration: "none" }}>
             <li>
-              <StoreIcon className="icon" />
-              <span>Products</span>
+              <EqualizerIcon className="icon" />
+              <span>Code Metrics</span>
             </li>
           </Link>
           <li>
             <CreditCardIcon className="icon" />
-            <span>Orders</span>
+            <span>Statistical Data</span>
           </li>
           <li>
             <LocalShippingIcon className="icon" />

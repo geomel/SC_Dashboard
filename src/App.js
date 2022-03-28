@@ -38,10 +38,6 @@ function App() {
             <Route path="contracts">
               <Route index element={<Contracts />} />
               <Route path=":contractAdr" element={<Single />} />
-              <Route
-                path="new"
-                element={<New inputs={productInputs} title="Add New Contract" />}
-              />
             </Route>
           </Route>
         </Routes>
